@@ -1,0 +1,17 @@
+{
+  "name": "hosein-sSQL",
+  "version": "0.0.1",
+  "authors": [
+    "Hosein Khabbazian <hosenkh@gmail.com>"
+  ],
+  "description": "simple SQL database written with javascript to be used in node.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
