@@ -6,5 +6,6 @@
   connection.connect();
   connection.query('DROP DATABASE '+database);
   connection.query('DROP USER "admin"@"localhost"');
+  connection.query('DROP USER "public"@"localhost"');
   connection.end();
 })();
