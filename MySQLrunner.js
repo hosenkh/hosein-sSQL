@@ -270,6 +270,14 @@
       init();
     });
   },
+
+  addForignKey = function() {
+
+  },
+
+  dropForeignKey = function() {
+
+  },
   init = function(){
     switch (status){
       case 'loggedOff':
