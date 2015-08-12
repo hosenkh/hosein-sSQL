@@ -49,7 +49,7 @@
   },
   showDBs = function(){
     connection.query('SHOW DATABASES', function(err, result){
-      if (err) console.error('Unable to show databases.');
+      if (err) console.error('Unable to show databases.\nHave you tried to run mysql in xampp or something?!');
       liveArray = [];
       liveDB = null;
       liveTable = null;
@@ -153,7 +153,7 @@
   showTables = function(){
     connection.query('SHOW TABLES', function(err, result){
       if (err) {
-        console.error('Unable to show databases.');
+        console.error('Unable to show tables.');
         return;
       }
       liveTable = null;
@@ -271,6 +271,45 @@
     });
   },
 
+  fieldsShown = function() {
+    var
+    formName = 'which one do you want?\na)add a field\nb)drop a field\nc)add a foreign key\nd)drop a foreign key\ne)back to list of tables\nf)exit\ng)want more or less',
+    levelArray = ['type the letter only: '],
+    retFunc = function(answers) {
+      switch (answers[0]) {
+        case 'a':
+          status = 'wantsToAddField';
+          init();
+        break;
+        case 'b':
+          status = 'wantsToDropField';
+          init();
+        break;
+        case 'c':
+          status = 'wantsToAddFK';
+          init();
+        break;
+        case 'd':
+          status = 'wantsToDropFK';
+          init();
+        break;
+        case 'e':
+          status = 'usingDB';
+          init();
+        break;
+        case 'f':
+          status = 'wantsToExit';
+          init();
+        break;
+        case 'g':
+          status = 'wantMore';
+          init();
+        break;
+      }
+    };
+    form(formName, levelArray, retFunc);
+  },
+
   addForignKey = function() {
 
   },
@@ -323,7 +362,7 @@
         showFields();
       break;
       case 'fieldsShown':
-        logout();
+        fieldsShown();
       break;
     }
   };
