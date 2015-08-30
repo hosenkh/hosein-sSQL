@@ -368,53 +368,7 @@
   };
 
 
-//login: user name, password
-//liste database ha
-//a) afzudane 1 database
-//  name database
-//  passworde admin
-//  passworde public
-//  //bazgasht be liste database ha
-//b) pak kardane 1 database
-//  name database
-//  aya motmaennid mikhahid database "" ra pak konid?
-//  //bazgasht be liste database ha
-//c) kar kardan ba 1 database
-//  name database
-//  liste table ha
-//    a) afzudane yek table
-//      name table
-//      //bazgasht be liste table ha
-//    b) hazfe yek table
-//      name table
-//      aya motmaennid mikhahid table "" ra az database "" pak konid?
-//      //bazgash be liste table ha
-//    c) kar ba yek table
-//      name table
-//      describe
-//      a) afzudane yek field
-//        //name field
-//        //jense field (gozine ha erae shavand)
-//        //toole field (gozine ha erae shavand)
-//        //null or not null
-//        //primary key or not
-//        //auto increment or not
-//        //foreign key or not
-//          //if yes, to which table?
-//          //which field?
-//        //bazgasht be describe table
-//      b) hazfe yek field
-//        //agar primary key nabud hazf nashavad
-//        //aya motmaennid mikhahid fielde "" ra az table "" dar database "" hazf konid?
-//        //bazgasht be describe table
-//      c) taghiire khosusiaate yek field
-//        //moshakhasate afzudane field
-//      d) want more or less? ...
-//      e) bazgasht be liste table ha
-//    d) want more or less?...
-//    e) bazgasht be liste database ha
-// d) want more or less? hit "close" and use "mysql -u [your username] -p" and use professional codes.
-// // addField = function(db,tableName, fieldName, dataType, charLength, nullity, FK){
+// // addField = function(db,tableName, fieldName, dataType, charLength, nullity){
   //   dbConnector(db);
     //data types are:
     //numeric types
